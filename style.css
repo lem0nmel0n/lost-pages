@@ -41,18 +41,11 @@ body {
   gap: 5px;
 }
 
-.tds {
-  transition: transform .2s;
+.image {
   margin: 0 auto;
-  position: relative;
-}
-.tds:hover {
-  transform: scale(1.08)
-}
-.extra {
-  transition: transform .2s;
-  margin: 0 auto;
-  position: relative;
+  position: relative;}
+
+
 
 
 }
