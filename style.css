@@ -36,16 +36,43 @@ body {
   border-radius:4px;
 }*/
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(180px, 1fr) );
-  grid-template-rows: 1fr 1fr;
-  gap: 25px;
-}
-
-.image {
+img {
   margin: 0 auto;
   position: relative;}
 
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 
