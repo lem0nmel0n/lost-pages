@@ -37,21 +37,15 @@ img {
   vertical-align: middle;
 }
 
-@media (max-width: 1000px) {
-  .column {
-    flex: 25%;
-    max-width: 25%;
-  }
-}
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 300px) {
   .column {
     flex: 100%;
     max-width: 100%;
