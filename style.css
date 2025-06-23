@@ -9,6 +9,7 @@ body {
 @font-face {
   font-family: pixel;
   src: url(assets/pixel.otf);
+  font-display: swap;
 }
 
 img {
