@@ -17,6 +17,18 @@ img {
   position: relative;
   image-rendering: crisp-edges;}
 
+figure {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+figcaption {
+  margin-top: 4px;
+  font-size: 0.9em;
+  color: #ffc12f;
+}
+
 * {
   box-sizing: border-box;
 }
