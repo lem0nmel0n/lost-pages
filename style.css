@@ -6,6 +6,16 @@ body {
   font-family: pixel;
   font-size:calc(16px + 0.5vw);
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
 @font-face {
   font-family: pixel;
   src: url(assets/PixelOperator.ttf);
@@ -15,18 +25,11 @@ body {
 img {
   margin: 0 auto;
   position: relative;
-  image-rendering: crisp-edges;}
+  image-rendering: crisp-edges;
+  width:100%}
 
-figure {
-  margin: 0;
-  text-align: center;
-  width: 100%; 
-}
-
-figcaption {
-  margin-top: 4px;
-  font-size: 0.9em;
-  color: #ffc12f;
+.footer {
+  margin:0px;
 }
 
 * {
@@ -43,6 +46,7 @@ figcaption {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+
 }
 
 .column img {
@@ -64,3 +68,38 @@ figcaption {
     max-width: 100%;
   }
 }
+
+section {
+  position: relative;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 105vh;
+  scroll-snap-align: start;
+}
+
+.scroll-thing {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caret {
+  display: inline-block;
+  letter-spacing: -2px; 
+  transform: rotate(90deg);
+}
+
+
+
