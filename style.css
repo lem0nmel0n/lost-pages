@@ -37,7 +37,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 105vh;
+  min-height: 100vh;
   scroll-snap-align: start;
 }
 .scroll-thing {
