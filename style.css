@@ -9,7 +9,7 @@ img {margin: 0 auto;position: relative;image-rendering: crisp-edges;width:100%}
 * {box-sizing: border-box;}
 section {position: relative;display: grid;place-items: center;align-content: center;min-height: 100vh;scroll-snap-align: start;}
 .scroll-thing {position: absolute;bottom: 50px;left: 20px;}
-.hidden {opacity: 0;transform: translateY(30px);transition: all 0.5s;}
+.hidden {opacity: 0.1;transform: translateY(30px);transition: all 0.5s;}
 .show {opacity: 1;transform: translateY(0);}
 .caret {display: inline-block;letter-spacing: -2px;transform: rotate(90deg);}
 .gallery {margin-top: 4px;column-count: 4;column-gap: 0;}
