@@ -1,76 +1,19 @@
-h1,h2 {
-  text-align: center;
-}
-body {
-  background-color: #121212;
-  color: #ffb300;
-  font-family: pixel;
-  font-size:calc(16px + 0.5vw);
-}
-html,body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-@font-face {
-  font-family: pixel;
-  src: url(assets/PixelOperator.ttf);
-  font-display: swap;
-}
-img {
-  margin: 0 auto;
-  position: relative;
-  image-rendering: crisp-edges;
-  width:100%
-}
-.footer {
-  margin:0px;
-}
-* {
-  box-sizing: border-box;
-}
-section {
-  position: relative;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100vh;
-  scroll-snap-align: start;
-}
-.scroll-thing {
-  position: absolute;
-  bottom: 50px;
-  left: 20px;
-}
-.hidden {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.5s;
-}
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.caret {
-  display: inline-block;
-  letter-spacing: -2px;
-  transform: rotate(90deg);
-}
-.gallery {
-  margin-top: 4px;
-  column-count: 4;
-  column-gap: 0;
-}
-.gallery img {
-  width: 100%;
-  display: block;
-  padding: 5px;
-}
-@media screen and (max-width: 700px) {
-  .gallery {
-    column-count:2;
-  }
-}
+h1,h2{text-align:center}
+h1{font-size:2em}
+h2{font-size:1.5em}
+body{background-color:#121212;color:#ffb300;font-family:pixel;font-size:calc(16px + .5vw)}
+html,body{height:100%;margin:0;padding:0;scroll-behavior:smooth;scroll-snap-type:y mandatory;overflow-y:scroll}
+@font-face{font-family:pixel;src:url(assets/PixelOperator.ttf);font-display:block}
+img{margin:0 auto;position:relative;image-rendering:crisp-edges;width:100%}
+.footer{margin:0}
+*{box-sizing:border-box}
+.row{display:flex;flex-wrap:wrap;padding:0 4px}
+.column{flex:25%;max-width:25%;padding:0 4px}
+.column img{margin-top:8px;vertical-align:middle}
+@media screen and (max-width:700px){.column{flex:50%;max-width:50%}}
+@media screen and (max-width:400px){.column{flex:100%;max-width:100%}}
+section{position:relative;display:grid;place-items:center;align-content:center;min-height:100vh;scroll-snap-align:start}
+.scroll-thing{position:absolute;bottom:50px;left:20px}
+.hidden{opacity:0.1;transform:translateY(30px);transition:all .5s}
+.show{opacity:1;transform:translateY(0)}
+.caret{display:inline-block;letter-spacing:-2px;transform:rotate(90deg)}
