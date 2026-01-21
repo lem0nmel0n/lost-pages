@@ -1,4 +1,6 @@
 h1,h2 {text-align: center;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
 body {background-color: #121212;color: #ffb300;font-family: pixel;font-size:calc(16px + 0.5vw);}
 html,body {height: 100%;margin: 0;padding: 0;scroll-behavior: smooth;scroll-snap-type: y mandatory;overflow-y: scroll}
 @font-face {font-family: pixel;src: url(assets/PixelOperator.ttf);font-display: swap;}
